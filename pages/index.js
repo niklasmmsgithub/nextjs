@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
+import { BlueButton, Button } from '../core/buttons'
+import { Checkbox } from '../core/checkbox'
 import { getSortedPostsData } from '../lib/posts'
 import utilStyles from '../styles/utils.module.css'
 
@@ -38,6 +40,11 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <Button>Click me!</Button>
+        <BlueButton>I'm blue!</BlueButton>
+        <Checkbox>Test</Checkbox>
       </section>
     </Layout>
   )
